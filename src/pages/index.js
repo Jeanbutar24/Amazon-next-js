@@ -3,10 +3,11 @@ import { Banner, Header, ProductCard } from '../components';
 
 export default function Home({ product }) {
   return (
-    <div>
+    <div className='bg-[#eaeded]'>
       <Head>
         <title>Amazon</title>
       </Head>
+      iu
       <div className='sticky top-0 z-50'>
         <Header />
       </div>
