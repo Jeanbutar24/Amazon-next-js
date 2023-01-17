@@ -4,7 +4,7 @@ import { useState } from 'react';
 const ProductCard = ({ data }) => {
   const [love, setLove] = useState(false);
   return (
-    <div className='relative z-30 flex flex-col m-2  bg-white rounded-lg p-3 mt-6  '>
+    <div className='relative z-30 flex flex-col m-2  bg-white rounded-lg p-3 mt-3 '>
       {/* top */}
       <div>
         <p className='text-[16px] font-semibold text-gray-800 '>{data?.title}</p>
@@ -13,7 +13,7 @@ const ProductCard = ({ data }) => {
       <div className='mt-3 self-center'>
         <img src={data?.image} alt='' className='object-contain  w-[340px] h-[250px]' />
       </div>
-      <div className='absolute right-7 top-[40px] space-y-1 flex flex-col bg-gray-500 p-1 bg-opacity-70 rounded-xl'>
+      <div className='absolute lg:right-1 right-7 top-[40px] space-y-1 flex flex-col bg-gray-500 p-1 bg-opacity-70 rounded-xl'>
         {!love ? (
           <div
             onClick={() => {
