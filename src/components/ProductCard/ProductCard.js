@@ -4,16 +4,16 @@ import { useState } from 'react';
 const ProductCard = ({ data }) => {
   const [love, setLove] = useState(false);
   return (
-    <div className='relative m-2 bg-white rounded-lg p-3 w-[27%] mt-6  '>
+    <div className='relative z-30 flex flex-col m-2  bg-white rounded-lg p-3 mt-6  '>
       {/* top */}
       <div>
         <p className='text-[16px] font-semibold text-gray-800 '>{data?.title}</p>
       </div>
       {/* center */}
-      <div className='mt-3'>
+      <div className='mt-3 self-center'>
         <img src={data?.image} alt='' className='object-contain  w-[340px] h-[250px]' />
       </div>
-      <div className='absolute right-0 top-[70px] space-y-1 flex flex-col bg-gray-500 p-1 bg-opacity-70 rounded-xl'>
+      <div className='absolute right-7 top-[40px] space-y-1 flex flex-col bg-gray-500 p-1 bg-opacity-70 rounded-xl'>
         {!love ? (
           <div
             onClick={() => {
@@ -31,7 +31,7 @@ const ProductCard = ({ data }) => {
         <Icon className='link' color='white' icon='ic:outline-shopping-cart' width={25} height={25} />
       </div>
       {/* bottom */}
-      <div className='absolute text-gray-900 font-semibold bottom-0 text-[17px] bg-gray-200 p-1 rounded-lg max-w-max cursor-pointer'>
+      <div className='absolute text-gray-900 font-semibold bottom-2 text-[17px] bg-yellow-400 p-1 rounded-lg max-w-max cursor-pointer'>
         <p>$ {data.price}</p>
       </div>
     </div>
