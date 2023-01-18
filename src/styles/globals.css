@@ -1,9 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer components {
   .link {
     @apply cursor-pointer hover:underline;
   }
+}
+.range::-webkit-slider-thumb {
+  background: #e9ff21;
 }
